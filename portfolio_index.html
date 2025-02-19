@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> My Portfolio</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Portfolio_style.css">
+ 
+    </head>
+    <!---------------------------------------------------------------------------Body----------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------Body----------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------Body----------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------Body----------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------Body----------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------Body----------------------------------------------------------------------------------------------->
+
+    <body> 
+        <header>
+            <nav>
+                <div id="datetime" class="tech-time"></div> 
+                <div class="left">
+             
+                    <a href="portfolio_index.html" class="logo"> <!-- Replace 'index.html' with your homepage URL -->
+                        <img src="logo.png" alt="Home Logo">
+                    </a>
+                </div>
+            
+                <div class="right">
+                    <ul>
+                        <li><a href="#first-section" onclick="openSection('first-section')">Home</a></li>    
+                        <li><a href="#second-section" onclick="openSection('second-section')">About</a></li>
+                        <li><a href="#projects" onclick="openSection('projects')">Projects</a></li>
+                        <li><a href="#third-section" onclick="openSection('third-section')">Contact</a></li>
+                        
+                        
+                
+                    </ul>
+                </div>
+                    
+                
+            </nav>   
+        </header>
+        <main>
+<!----------------------------Intro------------------------------------------------->
+
+            <section id="first-section" class="first-section">
+                <div class="top-section">
+                    Hi, I'm Kiran
+                
+                    <div> and I am passionate in </div>
+                    <span id="typed-text"></span>
+                </div>
+                <div class="bottom-section">
+                    <div class="buttons">
+                        <a href="https://docs.google.com/document/d/1PD_NZOgg4D7DAnKGCScy6G0Pjn_u1NUk/edit?usp=drive_link&ouid=102473101580294807351&rtpof=true&sd=true" target="blank">
+                            <button class="btn">View Resume</button>
+
+                        </a>
+                        <!-- <a href="https://www.linkedin.com/in/kiran-sapkota-85a51b233/" target="blank">
+                            <button class="btn">LinkedIn</button>
+                        </a>
+
+                        <a href="https://www.github.com/Ksap21" target="blank">
+                            <button class="btn">GitHub</button>
+                        </a> -->
+                    </div>
+                </div>
+            </section>
+<!------------------------------------------About------------------------------------->
+           
+            <section id ="second-section" class="second-section">
+                <div class="row1">
+                    <div class="column1"> 
+                        <img src="portfolioProfile.png">
+                        
+                    </div>
+                    
+                    <div class="column2">
+
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Aspiring computer and information technology student passionate about using technology 
+                            to solve complicated challenges, currently earning a Bachelor's degree in computer science 
+                            at Minnesota State University, Mankato, where I am studying programming languages such as Python, 
+                            Java, C++, SQL, C#. Seeking opportunities to improve technical skills and contribute to creative initiatives.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('eduation')">Education</p>
+                            <p class="tab-links " onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="eduation">
+                            <ul>
+                                <li><span>Aug 2022- Present</span><br>Minnesota State University, Mankato.<br>Bachelor of Science in Computer and Information Technology.</li>
+                                <li><span>April 2018- March 2020</span><br>Step By Step English School.<br>Computer Science.</li>
+                       
+                            </ul>
+                        </div>
+               
+                        <div class="tab-contents" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>Python, Java, SQL, C#  JavaScript, HTML, CSS</li>
+                                <li><span>Operating Systems</span><br>MacOS, Windows, Linux</li>
+                                <li><span>General Skills</span><br>Adobe Photoshop/Premier Pro, Virtual Box, Data Structures, Git.</li>
+                                <li><span>Web-app Development</span><br>Web-app Development</li>
+
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Aug 2023 - Present</span><br>Centennial Student Union | Tech Ops</li>
+                                <li><Span>June 2020 - July 2022</span><br>B. Tech Pvt. Ltd | It consultant	</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+<!------------------------- Projects Section ---------------------->
+
+<div class="ThirdPage">
+
+    <section id="projects" class="projects">
+        <h1>Projects</h1>
+        <section class="project-list">
+            <article class="project-item">
+                <h2>Apartment Finder Website</h2>
+                <p>Developed an intuitive platform to help users find apartments based on their preferences. This project involved backend development and user-friendly UI design.</p>
+                <a href="project-details/apartment-finder.html" class="button">Learn More</a>
+            </article>
+
+            <article class="project-item">
+                <h2>FPS Zombie Shooting Game</h2>
+                <p>Collaborated with a team to design and build an FPS zombie shooting game. Focused on player mechanics, weapon systems, and environmental elements. A thrilling experience in game development!</p>
+                <a href="project-details/zombie-game.html" class="button">Learn More</a>
+            </article>
+
+            <article class="project-item">
+                <h2>File Reader in C#</h2>
+                <p>Created a robust C# application capable of opening and reading various file types. This project honed my skills in C# programming and file system operations.</p>
+                <a href="project-details/file-reader.html" class="button">Learn More</a>
+            </article>
+
+            <article class="project-item">
+                <h2>Nepal Scouts Journey</h2>
+                <p>Participated in and led various community and leadership activities as part of Nepal Scouts. Highlights include attending an international jamboree in Sri Lanka and numerous camping adventures.</p>
+                <a href="project-details/scouts-journey.html" class="button">Learn More</a>
+            </article>
+        </section>
+    </section>
+<!---------------------------------Certificates------------------------>
+<section id="Certificates" class="Certificates">
+    <h1>Certificates</h1>
+    <section class="Certificate-list">
+        <article class="Certificate-item">
+            <div class="Certficate1">
+                <a href="https://drive.google.com/file/d/your-file-id-1/view" target="_blank" class="image-button">
+ ç≈
+            <img src="Certificate1.png" alt="Button Image">
+            <div class="hover-text">Click to Open File</div>
+            </div>
+        </article>
+
+        <article class="Certificate-item">
+            <div class="Certficate2"></div>
+            <h2>Certificate 2</h2>
+            <a href="project-details/zombie-game.html" class="button">Learn More</a>
+        </div>
+        </article>
+
+        <article class="Certificate-item">
+            <h2>Certificate 3</h2>
+            <a href="project-details/file-reader.html" class="button">Learn More</a>
+        </article>
+
+       
+    </section>
+</section>
+</div>
+<!---------------------------------Contact Me------------------------>
+<section id="third-section" class="third-section">
+        <div class="contact-heading">Contact Me</div>
+        <div class="contact-form">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="How can I assist you?" required></textarea>
+            </div>
+            <button class="submit-btn" type="submit">Send Message</button>
+        </div>
+    </section>
+</section>
+
+<div class="watch-container">
+        <div id="clock"></div>
+    </div>
+    <script src="script.js"></script>
+
+
+<!---------------------------------Social Media------------------------>
+    <section id ="fourth-section" class="social-icons-section">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/kiran-sapkota-85a51b233/" target="_blank" rel="noopener noreferrer" class="social-icon"><img src="linkedin.png" alt="Facebook"></a>
+            <a href="https://github.com/Ksap21" target="_blank" rel="noopener noreferrer" class="social-icon"><img src="github.png" alt="Twitter"></a>
+            
+            <!-- Add more social media icons as needed -->
+        </div>
+    </section>
+
+ <!---------------------------------Footer------------------------>
+ <section class ="Footer">
+    
+        <!-- Footer content goes here -->
+        <p>&copy; 2023 Kiran's Portfolio. All rights reserved.</p>
+  
+
+</section>
+
+
+<!-----------------------------------JavaScript-------------------------------------->   
+
+
+<!-----------------------------------JavaScript to animate my passion in first page-------------------------------------->   
+    
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+                // Initialize the Typed.js effect
+                var options = {
+                    strings: ["Cybersecurity.","Web, App Development.", "Ethical Hacking."],
+                    typeSpeed: 50, // Typing speed
+                    backSpeed: 50, // Backspacing speed
+                    backDelay: 1000, // Delay before starting to backspace
+                    loop: true, // Infinite loop
+                };
+                var typed = new Typed("#typed-text", options);
+            });
+        </script>
+
+<!-----------------------------------JavaScript to leave certain elements at fixed point until fixed time while scrolling-------------------------------------->   
+
+
+        <script>
+
+           var tablinks = document.getElementsByClassName("tab-links") ;
+           var tabcontents = document.getElementsByClassName("tab-contents") ;
+
+           function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove('active-link');
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+            
+           }
+        </script>
+       <!-- // <script src="script.js">    </script> -->
+       <script>
+       document.querySelectorAll(".btn").forEach((button) => {
+        button.addEventListener("mouseover", () => {
+            button.style.animation = "gradient-shift 3s infinite linear";
+        });
+    
+        button.addEventListener("mouseleave", () => {
+            button.style.animation = "none";
+        });
+    });
+    
+    // Add this CSS to complement the script
+    const style = document.createElement("style");
+    style.innerHTML = `
+        @keyframes gradient-shift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    `;
+    document.head.appendChild(style);
+    
+
+
+</script>
+
+<script>
+function updateDateTime() {
+    const now = new Date();
+    const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+    };
+    const formattedTime = now.toLocaleDateString('en-US', options);
+    document.getElementById('datetime').textContent = formattedTime;
+}
+
+// Update every second
+setInterval(updateDateTime, 1000);
+
+// Initial call to set the time immediately
+updateDateTime();
+</script>
+
+
+
+
+
+</body>
+</html>
