@@ -1,0 +1,600 @@
+
+
+            
+body{
+    font-family:"Poppins", sans-serif;
+    background-color: #7f3636;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin: 0 ;
+    padding: 0 ;
+    position: absolute
+    
+
+}
+.tech-time {
+    font-family: 'Roboto Mono', monospace; /* Tech-like font */
+    color: #42e657; /* Neon green color */
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    padding: 10px 20px; /* Adjust padding for better appearance */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(66, 230, 87, 0.7); /* Glow effect */
+    position: fixed;
+    bottom: 10px; /* 10px from the bottom */
+    right: 10px; /* 10px from the right */
+    animation: glow 1.5s infinite alternate; /* Glow animation */
+    z-index: 1000; /* Ensures it stays above other content */
+}
+nav {
+    background-color: #333;
+    position: fixed;
+    display: flex;
+    justify-content: space-between; /* This ensures that your elements are spaced correctly */
+    align-items: center;
+    height: 60px;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.left {
+    margin-left: 200px; /* Add some margin if needed */
+}
+
+
+.left img {
+    height: 55px; /* Adjust the size of the logo */
+    width: auto; /* Keep the aspect ratio intact */
+}
+
+
+nav ul {
+    display: flex; /* Horizontally align list items */
+    list-style: none; /* Remove default list bullets */
+    margin-right: 100px; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    margin: 0 20px; /* Add horizontal spacing between list items */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 25px;
+
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease-in-out, background-color 0.5s ease-in-out;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+}
+
+nav ul li a:hover { /* Removed the extra space before :hover */
+    transform: scale(1.2); /* Adds scaling effect on hover */
+    background-color: rgba(106, 97, 97, 0.2); /* Optional: Add background color effect */
+}
+
+
+
+/* ----------------------------------------firstSection----------------------------*/
+.first-section{
+    width: 100%;
+    padding:10%;
+   
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    /* align-items:start flex-; Align to the left */
+    justify-content: flex-start; /* Optional: Align vertically at the top */
+    
+    background: #0d0d0d;
+   
+}
+/* .first-section  div{
+    width:100% */
+/*     
+} */
+.top-section{
+    margin-top:150px;
+    margin-bottom:5px;
+    margin-left:150px;
+   
+    font-size:3rem;
+    width:100%;
+    color:lightblue;
+    background-color:turquoise var(--background-opacity);
+    text-align:left;
+
+    
+}
+#typed-text{
+    color:rgb(0, 236, 24);
+}
+
+
+.bottom-section {
+    position:sticky;
+    text-align: left;
+    margin-top:0px;
+    margin-bottom:180px;
+    margin-left:90px;
+    width: 100%;
+    top: 0;
+    padding: 20px;
+}
+
+.btn {
+
+    margin: 10px 0px;
+    margin-left: 50px;
+    padding: 10px 15px;
+    border: none; 
+    outline: none;
+     color: #ffffff;
+    
+    font-size: 1.5rem;
+    position: relative;
+    cursor: pointer;
+    z-index: 0;
+    border-radius: 20px;
+
+}
+.btn::after
+{
+    border-style: solid;
+    border:10px;
+    border-color: rgb(198, 15, 15);
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100% ;
+    height: 100% ;
+    background-color:#18425e;
+    left:0;
+    right:0;
+    top:0;
+    border-radius:10px;
+}
+
+.btn::before {
+    content: "";
+   
+    background: linear-gradient(
+        45deg,
+        #FF0000,
+        #FF7300,
+        #FFFB00,
+        #48FF00,
+        #00FFD5,
+        #002BFF,
+        #FF00C8,
+        #FF0000
+        );
+    position: absolute;
+    top: -2px; /* Slightly outside the button */
+    left: -2px; /* Slightly outside the button */
+    background-size: 600%; /* Gradient animation */
+    z-index: -1; /* Keep the glow behind the button */
+    width: calc(100% + 2px); /* Expand the width for the glow effect */
+    height: calc(100% + 2px); /* Expand the height for the glow effect */
+    filter: blur(8px); /* Apply a subtle blur */
+   
+    /* Animation*/
+   
+    transition:opacity 0.3 ease-in-out;
+    border-radius:10px;
+    opacity:1;
+   
+}
+@keyframes glowing
+{
+    0% {background-position: 0 0;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0 0;}
+}
+
+.bottom-section .btn:hover::before {
+    animation:glowing 5s  linear infinite;
+    opacity: 1; /* Show the glow on hover */
+    transform: scale(1.1); /* Slightly expand for effect */
+}
+
+.btn:active:after{
+    color: black;
+    font-weight: bold;
+}
+
+
+
+   
+
+#second-section {
+    width: 100%;
+    padding:10% 10px;
+    background-color:rgb(203, 81, 47);
+    /* border: 1px solid; */
+    
+}
+
+
+.row1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+   
+    
+
+}
+
+.column1{
+    flex-basis:35%;
+    margin:70px 0px;
+    margin-left:50px;
+    margin-right:50px;
+}
+
+
+.column1 img{
+    width: 80%;
+    justify-content:center;
+    height:auto;
+}
+.column2{
+    flex-basis: 50%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(19, 17, 17);
+}
+.column2.p{
+    color:white;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+    color:#a40599;
+}
+.tab-links{
+    margin-right:50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position:relative;
+    
+    
+}
+.tab-links::after{
+    content: ' ';
+    width: 0;
+    height:3px;
+    background:#ff004f;
+    position:absolute;
+    left:0;
+    bottom: -8px;
+    transition:0.5s;
+}
+.tab-links.active-link::after{
+    width:50%;
+    color:#47a1e5;
+    
+}
+.tab-contents ul {
+    margin: 0; 
+    padding: 0;
+    color: rgb(255, 255, 255);
+    
+}
+.tab-contents ul li{
+    list-style:none;
+    margin:10px 0;
+    
+    
+
+}
+.tab-contents ul li span{
+    color:#ff004f;
+    font-size:14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+/* Add to the parent container of projects and certificates */
+.ThirdPage {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Optional: adds space between the two sections */
+}
+
+/* Ensure both sections take equal width */
+.projects, .Certificates {
+    width: 48%; /* Adjust width to ensure they fit side by side */
+}
+/* Project Section Styles */
+
+.projects{
+    width:50%;
+    background-color: #333;
+    align-items: right;
+}
+.projects h1{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+}
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Four columns */
+    gap: 20px;
+    padding: 40px;
+    max-width: 1000px; /* Increase width to fit items and gaps */
+    margin: 0 auto; /* Center the container */
+}
+
+.project-item {
+    background: #7c287c;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    aspect-ratio: 1 / 1; /* Keep square shape */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:300px;
+    height:300px;
+}
+
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-item h2 {
+    font-size: 1.5rem;
+    color: #1e1e2f;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.project-item p {
+    margin: 0.5rem 0;
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+.project-item .button {
+    display: inline-block;
+    background: #4db8ff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin:5px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    
+}
+
+.project-item .button:hover {
+    background: #1e1e2f;
+}
+
+.Certificates{
+    width:50%;
+    background-color: #6c0a0a;
+    align-items: left;
+}
+.Certificates h1{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+}
+.Certificate-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Four columns */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px; /* Increase width to fit items and gaps */
+    margin: 0 auto; /* Center the container */
+}
+.Certificate-item img
+{
+    width:400px;
+    height:300px;
+}
+
+
+
+.Certificate-item {
+    /* background: #7c287c; */
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    aspect-ratio: 1 / 1; /* Keep square shape */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:400px;
+    height:300px;
+    align-items: center;
+}
+
+
+.Certificate-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.Certificate-item h2 {
+    font-size: 1.5rem;
+    color: #1e1e2f;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.Certificate-item .button {
+    display: inline-block;
+    background: #4db8ff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin:5px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.Certificate-item .button:hover {
+    background: #1e1e2f;
+}
+
+
+.contact-section {
+    
+    
+   
+    width: 100%;
+   
+ 
+    background-color: white;
+    float:left;
+
+}
+
+.contact-heading {
+    padding: 70px;
+    text-align: center;
+    border: 30px;
+    font-size: 6rem;
+    font-weight: 600;
+    color: Black;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #47a1e5;
+}
+
+.submit-btn {
+    background-color: #47a1e5;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #3689c8;
+}
+.social-icons-section {
+   
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    align-items: center;
+    margin-top: 250px; 
+
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 20px;
+}   
+
+
+.social-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #47a1e5;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover img {
+    transform: scale(1.2);
+}
+
+.Footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    
+    display:flex;
+    width: 100%;
+    justify-content:space-around;
+    align-items:center;
+    height:50px;
+    background-color:rgb(215, 218, 215);
+    
+
+
+}
+/*------------------------------------------------------------Transition -----------------------------------------------*/
+:root
+{
+--scroll:0;
+
+}
+
+
+.bottom-section
+{
+    position: sticky;
+     top:0;
+     translate:10 calc(-1% * (max(var(--scroll),25)) * 100/75) ;
+ 
+ --background-opacity: calc(100% -1% * min(var(--scroll), 30) * 100/10);
+ }
